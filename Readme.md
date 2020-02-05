@@ -5,7 +5,8 @@ The cni_challenge.py app is a wrapper for you to add your code/package which is 
 
 ### CNI Challenge 2019 Submission Template
 
-Create a form in the UI with the following fields:
+Create a form in the UI with the following fields.
+
 a. Author Names
 b. Team name (optional)
 c. Affiliations
