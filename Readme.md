@@ -1,4 +1,4 @@
-### CNI-Challenge.
+### CNI-Challenge. (Connectomics in NeuroImaging)
 
 Participants will be asked to design a classifcation framework that can predict subject diagnosis based on brain connectivity data. Submissions are accepted as containerised Docker images.
 The cni_challenge.py app is a wrapper for you to add your code/package which is then containerised by Docker. While this is coded in Python and currently contains a bare bones example also in Python, other languages are possible.
@@ -12,14 +12,6 @@ c. Affiliations
 d. Short Description of the submitted method
 e. The Link to your docker container on Dockerhub
 f. Any specific instructions to execute your Docker image.
-
-### Create a Login Portal for the user to submit their docker images.
-
-A sample Registration Page.
-![CNI_Register](https://user-images.githubusercontent.com/15992276/73865933-0349c980-4812-11ea-97ec-31978c945367.png)
-
-A sample Login Page.
-![CNI_Login](https://user-images.githubusercontent.com/15992276/73865931-02b13300-4812-11ea-8754-dbb20835bf3b.png)
 
 ### Workflow.
 
@@ -35,7 +27,7 @@ There are some technical requirements to be met before submitting your applicati
 
 This plugin can be run in two modes: natively as a python package or as a containerized Docker image.
 
-***Using Docker Run***
+**_Using Docker Run_**
 
 ```docker
 docker pull ${your_Docker_account name}/${cni_challenge_DockerRepo}
@@ -54,3 +46,27 @@ classification_metrics.py -p classification.txt -g ${goundtruth_file} -o ${outpu
 ```
 
 There are some performance evaluation criterias (http://miccai.brainconnectivity.net/challenge_eval.html)
+
+### Mockups to draw inspiration from
+
+### Create a Login Portal for the user to submit their docker images.
+
+A sample Registration Page.
+![CNI_Register](https://user-images.githubusercontent.com/15992276/73865933-0349c980-4812-11ea-97ec-31978c945367.png)
+
+A sample Login Page.
+![CNI_Login](https://user-images.githubusercontent.com/15992276/73865931-02b13300-4812-11ea-8754-dbb20835bf3b.png)
+
+Landing Page.
+![Landing Page](https://user-images.githubusercontent.com/15992276/73867794-448fa880-4815-11ea-8a6c-050af683f814.png)
+
+Different Facets of the CNI Challenge.
+
+1. Transfer Learning Challenge (http://miccai.brainconnectivity.net/challenge.html)
+
+2. Workshop (http://miccai.brainconnectivity.net/workshop.html)
+
+3. ChRIS
+
+The website needs to be a one-stop hub for the entire challenge. Together with the CNI workshop, the challenge presents a necessary step toward reproducible research in the field.
+An accepted challenge submission must be accompanied by at least one author registered to the CNI-TL Challenge through the MICCAI satellite events registration.
