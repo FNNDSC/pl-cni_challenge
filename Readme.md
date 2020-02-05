@@ -75,6 +75,6 @@ Create a form in the UI with the following fields.
 5. The Link to your docker container on Dockerhub
 6. Any specific instructions to execute your Docker image.
 
-7. An Example of a CSV file would like this:
+An Example of a CSV file would like this:
 
 ![csv](https://user-images.githubusercontent.com/15992276/73888384-8b909480-483b-11ea-8222-fdc9dcae8f7b.png)
