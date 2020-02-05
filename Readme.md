@@ -8,10 +8,15 @@ The cni_challenge.py app is a wrapper for you to add your code/package which is 
 Create a form in the UI with the following fields.
 
 a. Author Names
+11
 b. Team name (optional)
+12
 c. Affiliations
+13
 d. Short Description of the submitted method
+14
 e. The Link to your docker container on Dockerhub
+15
 f. Any specific instructions to execute your Docker image.
 
 ### Workflow.
