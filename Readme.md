@@ -41,15 +41,15 @@ There are some performance evaluation criterias (http://miccai.brainconnectivity
 
 ### Create a Login Portal for the user to submit their docker images.
 
-A sample Registration Page.
+## A sample Registration Page.
 
 ![CNI_Register](https://user-images.githubusercontent.com/15992276/73865933-0349c980-4812-11ea-97ec-31978c945367.png)
 
-A sample Login Page.
+## A sample Login Page.
 
 ![CNI_Login](https://user-images.githubusercontent.com/15992276/73865931-02b13300-4812-11ea-8754-dbb20835bf3b.png)
 
-Landing Page.
+## Landing Page.
 
 ![Landing Page](https://user-images.githubusercontent.com/15992276/73867794-448fa880-4815-11ea-8a6c-050af683f814.png)
 
@@ -64,9 +64,9 @@ Different Facets of the CNI Challenge.
 The website needs to be a one-stop hub for the entire challenge. Together with the CNI workshop, the challenge presents a necessary step toward reproducible research in the field.
 An accepted challenge submission must be accompanied by at least one author registered to the CNI-TL Challenge through the MICCAI satellite events registration.
 
-4. CNI Challenge 2019 Submission Template (http://www.brainconnectivity.net/challenge_subm.html)
+## CNI Challenge 2019 Submission Template (http://www.brainconnectivity.net/challenge_subm.html)
 
-Create a form in the UI with the following fields.
+# Create a form in the UI with the following fields.
 
 1. Author Names
 2. Team name (optional)
@@ -74,6 +74,8 @@ Create a form in the UI with the following fields.
 4. Short Description of the submitted method
 5. The Link to your docker container on Dockerhub
 6. Any specific instructions to execute your Docker image.
+
+## Output
 
 An Example of a CSV file would like this:
 
