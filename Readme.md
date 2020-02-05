@@ -5,13 +5,14 @@ The cni_challenge.py app is a wrapper for you to add your code/package which is 
 
 ### CNI Challenge 2019 Submission Template
 
-Create a form in the UI with the following fields:
-a. Author Names
-b. Team name (optional)
-c. Affiliations
-d. Short Description of the submitted method
-e. The Link to your docker container on Dockerhub
-f. Any specific instructions to execute your Docker image.
+Create a form in the UI with the following fields.
+
+1. Author Names
+2. Team name (optional)
+3. Affiliations
+4. Short Description of the submitted method
+5. The Link to your docker container on Dockerhub
+6. Any specific instructions to execute your Docker image.
 
 ### Workflow.
 
