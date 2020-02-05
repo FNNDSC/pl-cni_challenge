@@ -5,8 +5,7 @@ The cni_challenge.py app is a wrapper for you to add your code/package which is 
 
 ### CNI Challenge 2019 Submission Template
 
-1. Create a form in the UI with the following fields.
-
+Create a form in the UI with the following fields:
 a. Author Names
 b. Team name (optional)
 c. Affiliations
@@ -16,9 +15,11 @@ f. Any specific instructions to execute your Docker image.
 
 ### Create a Login Portal for the user to submit their docker images.
 
-A sample Login Page.
-
 A sample Registration Page.
+![CNI_Register](https://user-images.githubusercontent.com/15992276/73865933-0349c980-4812-11ea-97ec-31978c945367.png)
+
+A sample Login Page.
+![CNI_Login](https://user-images.githubusercontent.com/15992276/73865931-02b13300-4812-11ea-8754-dbb20835bf3b.png)
 
 ### Workflow.
 
@@ -34,7 +35,7 @@ There are some technical requirements to be met before submitting your applicati
 
 This plugin can be run in two modes: natively as a python package or as a containerized Docker image.
 
-Using Docker Run.
+***Using Docker Run***
 
 ```docker
 docker pull ${your_Docker_account name}/${cni_challenge_DockerRepo}
