@@ -45,7 +45,7 @@ There are some performance evaluation criterias (http://miccai.brainconnectivity
 
 ![CNI_Register](https://user-images.githubusercontent.com/15992276/73865933-0349c980-4812-11ea-97ec-31978c945367.png)
 
-## A## sample Login Page.
+#### sample Login Page.
 
 ![CNI_Login](https://user-images.githubusercontent.com/15992276/73865931-02b13300-4812-11ea-8754-dbb20835bf3b.png)
 
