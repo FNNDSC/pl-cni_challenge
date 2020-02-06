@@ -66,7 +66,7 @@ An accepted challenge submission must be accompanied by at least one author regi
 
 ## CNI Challenge 2019 Submission Template (http://www.brainconnectivity.net/challenge_subm.html)
 
-# Create a form in the UI with the following fields.
+## Create a form in the UI with the following fields.
 
 1. Author Names
 2. Team name (optional)
