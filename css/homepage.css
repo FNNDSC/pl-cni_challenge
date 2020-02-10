@@ -1,0 +1,18 @@
+.hero {
+	background-image: url('../images/hero.jpg');
+	padding: 40px;
+	height: 500px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hero > .hero-title {
+	background-color: #11122b;
+	color: #fff;
+	width: 290px;
+	border-radius: 2px;
+	padding: 1px 20px;
+}
+
+
