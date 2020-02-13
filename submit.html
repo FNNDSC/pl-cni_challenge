@@ -48,41 +48,39 @@
 		</header>
 
 		<main class="main-template main-grid">
-			<h1 class="page-title">CNI- Challenge.</h1>
-			<p class="sub-title">Let's get started !</p>
-			<img class="main-image" src="images/images.jpg" alt="main image" />
+			<h1 class="page-title">Submit your Docker Image.</h1>
+			<p class="sub-title">
+				MICCAI CNI 2019 Challenge is accepting solutions as Docker images.
+			</p>
+
+			<img
+				class="main-image"
+				src="images/contact.jpg"
+				alt="a bunch of mailboxes"
+			/>
+			<div class="secondary-text">
+				<h2 class="section-title">The Expected outcome for the challenge:</h2>
+				<p>
+					Evaluate the reliability and performance of different analytical
+					strategies for healthy vs disordered connectome classification.
+					Evaluate the generalizability or "transferability" of these
+					classification methods between clinical populations.
+				</p>
+			</div>
 
 			<div class="main-text">
-				<h2 class="section-title">A brief overview of the challenge</h2>
-				<p>
-					Large, open source datasets, such as the Human Connectome Project
-					(HCP) and the Autism Brain Imaging Data Exchange (ABIDE), have spurred
-					the development of new and increasingly powerful machine learning
-					strategies in brain connectomics. However, one key question remains:
-					are we capturing biologically relevant and generalizable information
-					about the brain, or are we simply overfitting to the data? The CNI
-					Challenge 2019 will address the issues of generalizability and
-					clinical relevance for functional connectomes. We will leverage a
-					unique resting-state fMRI (rsfMRI) dataset of attention deficit
-					hyperactivity disorder (ADHD) and neurotypical controls (NC).
-					Participants will be asked to design a classification framework that
-					can predict subject diagnosis (ADHD vs. Neurotypical Control) based on
-					brain connectivity data.
-				</p>
-				<br /><br />
-				<p>
-					We will provide 120 examples of each class for training and
-					validation. In a surprise twist, we will also evaluate the
-					classification performance on a related clinical population with an
-					ADHD comorbidity. This challenge will allow us to assess (1) whether
-					the method is extracting functional connectivity patterns related to
-					ADHD symptomatology, and (2) how much of this information “transfers”
-					between clinical populations. This is the first MICCAI challenge on
-					functional connectomics. Together with the 3rd CNI workshop featuring
-					the latest connectomic advancements, our challenge presents a
-					necessary step toward reproducible and translational research in the
-					field.
-				</p>
+				<form class="contact-form" action="#" method="POST">
+					<label class="fname-label" for="fname">First Name</label>
+					<input class="fname-input" id="fname" type="text" />
+
+					<label class="lname-label" for="lname">Last Name</label>
+					<input class="lname-input" id="lname" type="text" />
+
+					<label class="message-label" for="message">Docker Image</label>
+					<textarea class="message-textarea" id="message"></textarea>
+
+					<button class="btn btn-primary btn-form">Send</button>
+				</form>
 			</div>
 		</main>
 
