@@ -48,40 +48,59 @@
 		</header>
 
 		<main class="main-template main-grid">
-			<h1 class="page-title">CNI- Challenge.</h1>
+			<h1 class="page-title">Challenge Overview</h1>
 			<p class="sub-title">Let's get started !</p>
 			<img class="main-image" src="images/images.jpg" alt="main image" />
 
 			<div class="main-text">
-				<h2 class="section-title">A brief overview of the challenge</h2>
+				<h2 class="section-title">Background</h2>
 				<p>
+					The Connectomics in NeuroImaging (CNI) Challenge was part of the CNI workshop at MICCAI 2019. Full details of this Challenge can be found at in the corresponding publication <b>here</b>.<br /><br />
 					Large, open source datasets, such as the Human Connectome Project
 					(HCP) and the Autism Brain Imaging Data Exchange (ABIDE), have spurred
 					the development of new and increasingly powerful machine learning
 					strategies in brain connectomics. However, one key question remains:
 					are we capturing biologically relevant and generalizable information
-					about the brain, or are we simply overfitting to the data? The CNI
-					Challenge 2019 will address the issues of generalizability and
-					clinical relevance for functional connectomes. We will leverage a
-					unique resting-state fMRI (rsfMRI) dataset of attention deficit
-					hyperactivity disorder (ADHD) and neurotypical controls (NC).
-					Participants will be asked to design a classification framework that
+					about the brain, or are we simply overfitting to the data? This
+					Challenge addresses the issues of generalizability and
+					clinical relevance for functional connectomes. We provide 
+					resting-state fMRI (rsfMRI) datasets of attention deficit
+					hyperactivity disorder (ADHD) and neurotypical controls (NC) for you to 
+					design a classification framework that
 					can predict subject diagnosis (ADHD vs. Neurotypical Control) based on
 					brain connectivity data.
+					<br /><br />
+					With this portal and the use of our Docker framework, you are able to continually assess your 						classification model on our test dataset.
 				</p>
 				<br /><br />
 				<p>
-					We will provide 120 examples of each class for training and
-					validation. In a surprise twist, we will also evaluate the
-					classification performance on a related clinical population with an
-					ADHD comorbidity. This challenge will allow us to assess (1) whether
-					the method is extracting functional connectivity patterns related to
-					ADHD symptomatology, and (2) how much of this information “transfers”
-					between clinical populations. This is the first MICCAI challenge on
-					functional connectomics. Together with the 3rd CNI workshop featuring
-					the latest connectomic advancements, our challenge presents a
-					necessary step toward reproducible and translational research in the
-					field.
+
+				</p>
+				<h2 class="section-title">The Data</h2>
+				<p>
+
+				With collaborators from the Kennedy Krieger Institute in Baltimore, 120 examples of each class are available for 					<a href="https://github.com/mdschirmer/2019_CNI_TrainingRelease">training</a> and 
+				<a href="https://github.com/mdschirmer/2019_CNI_ValidationRelease">validation</a>.
+				<br /><br />
+				The data used for this challenge consists of preprocessed time resting-state fMRI (rs-fMRI) time series and 					demographic information. The rs-fMRI data was acquired on a Phillips 3T Achieva scanner using a single shot, 					partially parallel gradient-recalled EPI sequence with TR/TE = 2500/30ms, flip angle 70, voxel resolution = 3.05 x 					3.15 x 3mm, and a duration of either 128 or 156 time samples. Subjects were instructed to relax with their eyes 				open and focus on a central cross-hair, while remaining still for the duration of the scan.
+				<br /><br />
+				Preprocessing includes slice time correction, rigid body realignment, and normalization to the EPI version of the 					MNI template. The time courses were temporally detrended in order to remove gradual trends in the data. CompCorr 					(Behzadi et al. 2007) was performed to estimate and remove spatially coherent noise from the white matter and 					ventricles, along with the linearly detrended versions of the six rigid body realignment parameters and their 					first derivatives. From here, the data was spatially smoothed with a 6mm FWHM Gaussian kernel and bandpass 					filtered between 0.01-0.1 Hz. Finally, spike correction was performed using the AFNI package (Cox et al. 1996), as 					an alternative to motion scrubbing.
+				<br /><br />
+				For this challenge, we have extracted the mean time courses of the preprocessed rs-fMRI data using three standard 					parcellations: AAL (116 ROIs), Harvard Oxford (110 ROIs) and Craddock200 (200 ROIs). The data for each 					parcellation is included as a separate timeseries_XXX.csv file in corresponding the subject directory. Here, rows 					correspond to parcel number and columns correspond to time samples. Any of this data may be used 					to develop your models.
+				<br /><br />
+				In addition to the rs-fMRI data, we also provide the following demographic variables for each subject: Age, Sex, 					FSIQ, and Edinburgh Handedness. This information can be found in the accompanying phenotypic.csv file in each 					subject directory. During training and validation, diagnosis (DX) is provided for you to evaluate 					your model. During testing, the DX field will contain "N/A". 
+				</p>
+				</p>
+				<h2 class="section-title">Evaluation Metrics</h2>
+				<p>
+				We utilize a total of 16 measures, including: accuracy, error rate, sensitivity, specificity, precision, recall, 					F-Measure, Geometric-mean, AUC, and optimized precision.
+				(cf. Hossin and Sulaiman. A review on evaluation metrics for data classification evaluations. International 					Journal of Data Mining & Knowledge Management Process, 5(2):1,2015)
+				<br /><br />
+				In order to do so, your program must create a single output file containing: one containing a hard classification 					(0 and 1; classification.txt), and a separate file with the prediction probability/score (scores.txt). 
+				</p>
+				<h2 class="section-title">Uploading your Model for Testing</h2>
+				<p>
+
 				</p>
 			</div>
 		</main>
