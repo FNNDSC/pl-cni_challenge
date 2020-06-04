@@ -40,6 +40,9 @@
 							<a class="nav-link" href="about.html">OVERVIEW</a>
 						</li>
 						<li class="nav-item">
+							<a class="nav-link" href="howto.html">CONTAINERIZE</a>
+						</li>
+						<li class="nav-item">
 							<a class="nav-link" href="submit.html">SUBMIT</a>
 						</li>
 					</ul>
@@ -48,40 +51,70 @@
 		</header>
 
 		<main class="main-template main-grid">
-			<h1 class="page-title">CNI- Challenge.</h1>
-			<p class="sub-title">Let's get started !</p>
+			<h1 class="page-title">Challenge Overview</h1>
+			<p class="sub-title"> </p>
 			<img class="main-image" src="images/images.jpg" alt="main image" />
 
 			<div class="main-text">
-				<h2 class="section-title">A brief overview of the challenge</h2>
+				
 				<p>
-					Large, open source datasets, such as the Human Connectome Project
-					(HCP) and the Autism Brain Imaging Data Exchange (ABIDE), have spurred
+					The <a href="http://www.brainconnectivity.net">Connectomics in NeuroImaging Challenge</a> was held 						at the Medical Image Computation and Computer Assisted Intervention (MICCAI) Conference in 2019. Full 						details of this Challenge can be found at in the corresponding publication <b>here</b>.
+					<br /><br />
+					With our free to download training data and the use of our Docker framework, you will be able to 						continually assess your classification model on our hidden test dataset.
+					<br /><br />
+				<h2 class="section-title">Problem Statement</h2>
+				<p>					
+					Large, open source datasets have spurred
 					the development of new and increasingly powerful machine learning
 					strategies in brain connectomics. However, one key question remains:
 					are we capturing biologically relevant and generalizable information
-					about the brain, or are we simply overfitting to the data? The CNI
-					Challenge 2019 will address the issues of generalizability and
-					clinical relevance for functional connectomes. We will leverage a
-					unique resting-state fMRI (rsfMRI) dataset of attention deficit
-					hyperactivity disorder (ADHD) and neurotypical controls (NC).
-					Participants will be asked to design a classification framework that
-					can predict subject diagnosis (ADHD vs. Neurotypical Control) based on
-					brain connectivity data.
+					about the brain, or are we simply overfitting to the data? This
+					Challenge addresses the issues of generalizability and
+					clinical relevance for functional connectomes. We provide 
+					resting-state fMRI (rsfMRI) datasets of children with attention deficit
+					hyperactivity disorder (ADHD) and neurotypical controls for you to 
+					<b>design a classification framework that can predict subject diagnosis based on
+					brain connectivity data</b>.
 				</p>
-				<br /><br />
+				<h2 class="section-title">The Data</h2>
 				<p>
-					We will provide 120 examples of each class for training and
-					validation. In a surprise twist, we will also evaluate the
-					classification performance on a related clinical population with an
-					ADHD comorbidity. This challenge will allow us to assess (1) whether
-					the method is extracting functional connectivity patterns related to
-					ADHD symptomatology, and (2) how much of this information “transfers”
-					between clinical populations. This is the first MICCAI challenge on
-					functional connectomics. Together with the 3rd CNI workshop featuring
-					the latest connectomic advancements, our challenge presents a
-					necessary step toward reproducible and translational research in the
-					field.
+
+				With collaborators from the <a href="http://www.kennedykrieger.org/kirby-research-center">Kennedy Krieger 					Institute</a>, 120 examples of each class are available for 
+				<a href="https://github.com/mdschirmer/2019_CNI_TrainingRelease">training</a> (n=100/100) and 
+				<a href="https://github.com/mdschirmer/2019_CNI_ValidationRelease">validation</a> (n=20/20).
+				<br /><br />
+				For this challenge, we have extracted the mean time courses of the preprocessed rs-fMRI data using three standard 					parcellations: AAL (116 ROIs), Harvard Oxford (110 ROIs) and Craddock200 (200 ROIs). The data for each 					parcellation is included as a separate timeseries_XXX.csv file in corresponding the subject directory. Here, rows 					correspond to parcel number and columns correspond to time samples. Any of this data may be used 					to develop your models.
+				<br /><br />
+				In addition to the rs-fMRI data, we also provide the following demographic variables for each subject: Age, Sex, 					FSIQ, and Edinburgh Handedness. This information can be found in the accompanying phenotypic.csv file in each 					subject directory. During training and validation, diagnosis (DX) is provided for you to evaluate 					your model. During testing, the DX field will contain "N/A". 
+				<br /><br />
+				The test dataset comprises of another 25 subjects for each class, and remains unreleased to the public. It is only "accessible" through our evaluation portal.
+				</p>
+
+				</p>
+				<h2 class="section-title">Evaluation Metrics</h2>
+				<p>
+				We utilize a total of 16 measures, including: accuracy, error rate, sensitivity, specificity, precision, recall, 					F-Measure, Geometric-mean, AUC, and optimized precision.
+				<br>(cf. Hossin and Sulaiman. A review on evaluation metrics for data classification evaluations. 
+				Int. J. of Data Mining & Knowledge Management Process, 5(2):1,2015)
+				<br /><br />
+				Our Challenge portal will report the performance of your model on the hidden test set, using the above metrics.
+				</p>
+				<h2 class="section-title">Dockerize and upload your Model for Evaluation</h2>
+				<p>
+				Our Challenge portal employs the <a href="https://chrisproject.org">ChRIS platform</a>, an open source framework 					that utilizes cloud technologies to democratize medical analytics application development.
+				<br /><br />
+				To evaluate your model on hidden test data, the following steps are required (full details <a href="howto.html">here</a>):
+				<ol>
+					<li> Enable your classification model to output its decisions in a .csv file as per our <a href="">requirements</a>;</li>
+					<li> Train your model on our released datasets: 
+						<ul>
+						<li><a href="https://github.com/mdschirmer/2019_CNI_TrainingRelease">Training data</a></li>
+						<li><a href="https://github.com/mdschirmer/2019_CNI_ValidationRelease">Validation data</a></li>
+						</ul>
+					<li> Populate our wrapper code with your trained model to convert it into a containerized plugin that is ChRIS compatible;</li>
+					<li> Upload your containerized plugin to your <a href="https://www.docker.com">Docker Hub</a>;</li>
+					<li> Immedietely evaluate your model on hidden test data by entering the Docker image link <a href="submit.html">here</a>.</li>
+				</ol>
 				</p>
 			</div>
 		</main>
@@ -90,7 +123,7 @@
 			<div class="footer-main">
 				<img src="images/logo.png" alt="" class="footer-logo" />
 				<p class="footer-text">
-					Brain connectivity Conference
+					Connectomics in NeuroImaging Challenge
 				</p>
 				<p class="footer-fineprint">© Gideon Pinto 2019</p>
 			</div>
