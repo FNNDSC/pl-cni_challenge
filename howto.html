@@ -81,25 +81,44 @@
 					</pre>
 
 				</p>
-				<h2 class="section-title">The Data</h2>
-				<p>
 
-				With collaborators from the Kennedy Krieger Institute in Baltimore, 120 examples of each class are available for 					<a href="https://github.com/mdschirmer/2019_CNI_TrainingRelease">training</a> and 
-				<a href="https://github.com/mdschirmer/2019_CNI_ValidationRelease">validation</a>.
-				<br /><br />
-				For this challenge, we have extracted the mean time courses of the preprocessed rs-fMRI data using three standard 					parcellations: AAL (116 ROIs), Harvard Oxford (110 ROIs) and Craddock200 (200 ROIs). The data for each 					parcellation is included as a separate timeseries_XXX.csv file in corresponding the subject directory. Here, rows 					correspond to parcel number and columns correspond to time samples. Any of this data may be used 					to develop your models.
-				<br /><br />
-				In addition to the rs-fMRI data, we also provide the following demographic variables for each subject: Age, Sex, 					FSIQ, and Edinburgh Handedness. This information can be found in the accompanying phenotypic.csv file in each 					subject directory. During training and validation, diagnosis (DX) is provided for you to evaluate 					your model. During testing, the DX field will contain "N/A". 
-				</p>
 
 				</p>
-				<h2 class="section-title">Evaluation Metrics</h2>
+				<h2 class="section-title">Installation Requirements and Quick Setup</h2>
 				<p>
-				We utilize a total of 16 measures, including: accuracy, error rate, sensitivity, specificity, precision, recall, 					F-Measure, Geometric-mean, AUC, and optimized precision.
-				<br>(cf. Hossin and Sulaiman. A review on evaluation metrics for data classification evaluations. 
-				Int. J. of Data Mining & Knowledge Management Process, 5(2):1,2015)
-				<br /><br />
-				Our Challenge portal will report the performance of your model on the hidden test set, using the above metrics.
+				<ol>
+					<li> Install <b>Python</b> (3.5+) and <b>pip</b></li>
+					<li> Create a <a href="https://github.com/"><b>GitHub</b> account</a>, and 						install it on your machine;</li>
+					<li> Create a <a href="https://hub.docker.com/"><b>Docker Hub</b> account</a>;
+					<li> Install the latest <b>Docker</b> (17.04.0+) if you want to test your plugin's Docker image and 						containers on your machine. To install on Ubuntu 18.04:<br>
+      
+					<p><font face = "courier" size = "3" color = "#000000">
+						    &nbsp&nbsp&nbsp&nbsp apt-get remove docker docker-engine docker.io <br>
+						    &nbsp&nbsp&nbsp&nbsp apt install docker.io  <br>
+					       </font>
+					</p>
+					Otherwise, visit <a href="https://docs.docker.com/install/">https://docs.docker.com/install/</a> for installation directions.
+
+					<li> Fork our wrapper template <b><a href="https://github.com/aichung/pl-cni_challenge">pl-cni_challenge</a></b> repository to your GitHub.</li>
+					<li> Log onto your Docker Hub account and create a new repository with automated build:</li><br>
+					<ol type="a">
+						<li>In 'Account Settings' -> 'Linked Accounts', connect your GitHub account to your DockerHub account.</li>
+						<li>In your DockerHub home, click the <b>Create Repository+</b>  button. The website page will walk you through setting up the automated build. When prompted for the GitHub repository that you’d like to use for the automated build select the <b>pl-cni_challenge</b> repository that you just forked. Name the Docker repository <i>${cni_challenge_DockerRepo}</i> and make it Public.</li>
+
+						<li><b>***It is extremely important that you tag your automatically built docker image with an appropriate version number based on your GitHub tags***.</b><br>
+&nbsp&nbsp&nbsp&nbsp Create a new build rule by clicking the <b>BUILD RULES+</b>  button. A good rule is **Source type:** "Tag", **Source:** "/^[0-9.]+$/" and **Docker Tag:** "version-{sourceref}".</li>
+						<li> Click <b>Create & Build</b>  button to finish the setup and trigger the automated build.<br><br></li>
+				</ol>
+				<li>After this build has completed, the <b>cni_challenge</b> bare bones example is now available as a Docker image to be pulled from your Docker Hub. The link to it will be <i>${your_Docker_account name}/${cni_challenge_DockerRepo}</i>.Use this to <a href="submit">evaluate</a> your model on the test set.</li>
+			
+
+				<h2 class="section-title">Plugin Wrapper</h2>
+				<p>
+
+
+				</p>
+
+
 				</p>
 				<h2 class="section-title">Dockerize and upload your Model for Testing</h2>
 				<p>
