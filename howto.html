@@ -100,7 +100,8 @@
 					</p>
 					Otherwise, visit <a href="https://docs.docker.com/install/">https://docs.docker.com/install/</a> for 						installation directions.</li><br>
 
-					<li> Fork our wrapper template <b><a href="https://github.com/aichung/pl-cni_challenge">pl-cni_challenge</a></b> 						repository to your GitHub.</li>
+					<li> Fork our wrapper template <b><a href="https://github.com/aichung/pl-cnichallenge_stub">
+					pl-cnichallenge_stub</a></b> repository to your GitHub.</li>
 					<li> Log onto your Docker Hub account and create a new repository with automated build:<br></li>
 					<ol type="a">
 						<li>In 'Account Settings' -> 'Linked Accounts', connect your GitHub account to your 
@@ -108,7 +109,7 @@
 						<li>In your DockerHub home, click the <b>Create Repository+</b>  button. The website 
 						page will walk you through setting up the automated build. When prompted for the GitHub 
 						repository that you’d like to use for the automated build select the <b>pl-cni_challenge</b> 
-						repository that you just forked. Name the Docker repository <i>${cni_challenge_DockerRepo}</i> 
+						repository that you just forked. Name the Docker repository <i>${cnichallenge_DockerRepo}</i> 
 						and make it Public.</li>
 
 						<li><b>***It is extremely important that you tag your automatically built docker image 
@@ -118,20 +119,20 @@
 						"version-{sourceref}".</li>
 						<li> Click <b>Create & Build</b>  button to finish the setup and trigger the automated build.</li><br>
 					</ol>
-					<li>After this build has completed, the <b>cni_challenge</b> bare bones example is now available as 
+					<li>After this build has completed, the <b>cnichallenge_stub</b> bare bones example is now available as 
 					a Docker image to be pulled from your Docker Hub. The link to it will be 
-					<i>${your_Docker_account name}/${cni_challenge_DockerRepo}</i>.Use this to <a href="submit">evaluate</a> 
+					<i>${your_Docker_account name}/${cnichallenge_DockerRepo}</i>.Use this to <a href="submit">evaluate</a> 
 					your model on the test set.</li>
 				</ol>
 				</p>
 				<h2 class="section-title">Plugin Wrapper</h2>
 				<p>
-				We provide a wrapper for your code in a GitHub repo, pl-cni_challenge, that containerizes your trained model. 
-				pl-cni_challenge is an app containing a bare bones example which you can edit to include your code/package. 
-				Although the wrapper is coded in Python and currently contains an example also in Python, programs in other languages
-				can be included.<br><br>
+				We provide a wrapper for your code in a GitHub repo, <a href="https://github.com/aichung/pl-cnichallenge_stub">
+				pl-cnichallenge_stub</a>, that containerizes your trained model. 
+				pl-cnichallenge_stub is an app containing a bare bones example which you can edit to include your code/package. 
+				Although the wrapper is coded in Python, programs in other languages can be included.<br><br>
 
-				See the pl-cni_challenge Github repo README for details on how to execute and populate the bare bones example to containerize 					your model that is compatible for our evaluation portal.
+				See the pl-cnichallenge_stub README for details on how to execute and populate the bare bones example to 					containerize your model that is compatible for use on our evaluation portal.
 				
 				</p>
 
