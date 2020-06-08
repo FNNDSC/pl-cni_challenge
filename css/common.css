@@ -292,6 +292,7 @@ Info Section
 .footer {
   padding: 4em 0;
   text-align: center;
+  border-top: solid 1pt black;
 
   grid-template-areas:
     ". social ."
@@ -300,11 +301,14 @@ Info Section
 
 .footer-main {
   grid-area: main;
+  color: grey;
+  font-size: 0.9em;
 }
 
 .footer-fineprint {
   font-size: 0.75em;
   margin-top: 4em;
+  color: grey;
 }
 
 .social-list {
@@ -327,13 +331,13 @@ Info Section
 }
 
 .footer-main > .footer-logo {
-  width: 200px;
+  width: 150px;
   height: auto;
 }
 
 @media (min-width: 600px) {
   .footer {
-    grid-template-areas: ". main main social .";
+    grid-template-areas: ". main main main .";
   }
 
   .footer-main {
