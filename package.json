@@ -1,5 +1,6 @@
 {
   "name": "my-app",
+  "homepage": "http://192.168.0.20/cni_challenge/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

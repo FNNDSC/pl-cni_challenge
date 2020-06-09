@@ -12,7 +12,7 @@ import "./styles/homepage.css";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/cni_challenge">
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
