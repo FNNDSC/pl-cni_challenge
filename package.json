@@ -1,6 +1,6 @@
 {
   "name": "my-app",
-  "homepage": "http://fnndsc.childrens.harvard.edu/cni_challenge/",
+  "homepage": "http://fnndsc.childrens.harvard.edu/cnichallenge/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
