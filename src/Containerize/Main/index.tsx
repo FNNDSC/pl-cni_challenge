@@ -1,13 +1,12 @@
 import React from "react";
 import Connectivity from "../../assets/Connectivity.jpg";
-import Containerize from "..";
 
 const Main: React.FC = () => {
   return (
     <main className="main-template main-grid">
       <h1 className="page-title">Containerize with ChRIS and Docker</h1>
       <p className="sub-title">Let's get started !</p>
-      <img className="main-image" src={Connectivity} alt="main image" />
+      <img className="main-image" src={Connectivity} alt="brain connectivity" />
 
       <div className="main-text">
         <h2 className="section-title">Classification Output Requirements</h2>
@@ -107,7 +106,7 @@ const Main: React.FC = () => {
               you’d like to use for the automated build select the{" "}
               <b>pl-cni_challenge </b>
               repository that you just forked. Name the Docker repository{" "}
-              <i>{`\$\{cnichallenge_DockerRepo\}`} </i>
+              <i>{`$\{cnichallenge_DockerRepo}`} </i>
               and make it Public.
             </li>
 

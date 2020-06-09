@@ -116,8 +116,8 @@ const Main: React.FC = () => {
         <ol>
           <li>
             {" "}
-            Enable your classNameification model to output its decisions in a
-            .csv file as per our <a href="">requirements</a>;
+            Enable your classification model to output its decisions in a .csv
+            file as per our requirements
           </li>
           <li>
             {" "}

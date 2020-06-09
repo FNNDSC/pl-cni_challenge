@@ -18,8 +18,8 @@ const Main: React.FC = (props) => {
         </h2>
         <p>
           Evaluate the reliability and performance of different analytical
-          strategies for healthy vs disordered connectome classNameification and
-          compare with the <a href="#">challenge results</a>.
+          strategies for healthy vs disordered connectome classification and
+          compare with the challenge results.
         </p>
       </div>
 
