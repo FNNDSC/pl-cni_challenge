@@ -106,7 +106,9 @@ const Main: React.FC = () => {
               you’d like to use for the automated build select the{" "}
               <b>pl-cni_challenge </b>
               repository that you just forked. Name the Docker repository{" "}
-              <i>{`$\{cnichallenge_DockerRepo}`} </i>
+              <b>
+                <i>{`$\{cnichallenge_DockerRepo}`} </i>
+              </b>
               and make it Public.
             </li>
 
@@ -119,8 +121,9 @@ const Main: React.FC = () => {
               <br />
               Create a new build rule by clicking the <b>BUILD RULES+</b>{" "}
               button. A good rule is **Source type:** "Tag", **Source:**
-              "/^[0-9.]+$/" and **Docker Tag:** "version-sourceref".
+              "/^[0-9.]+$/" and **Docker Tag:** "version-{`{sourceref}`}".
             </li>
+
             <li>
               {" "}
               Click <b>Create & Build</b> button to finish the setup and trigger
@@ -132,8 +135,8 @@ const Main: React.FC = () => {
             After this build has completed, the <b>cnichallenge_stub</b> bare
             bones example is now available as a Docker image to be pulled from
             your Docker Hub. The link to it will be
-            <i> your_Docker_account name/cnichallenge_DockerRepo</i>. Use this
-            to <a href="submit">evaluate </a>
+            <i> {`$\{your_Docker_account name/cnichallenge_DockerRepo}`}</i>.
+            Use this to <a href="submit">evaluate </a>
             your model on the test set.
           </li>
         </ol>
