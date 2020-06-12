@@ -25,8 +25,8 @@ const Main: React.FC = () => {
         </p>
         <p>
           With our free to download training data and the use of our Docker
-          framework, you will be able to assess your classNameification model on
-          our hidden test dataset.
+          framework, you will be able to assess your classification model on our
+          hidden test dataset.
         </p>
         <h2 className="section-title">Problem Statement</h2>
         <p style={{ margin: "1.5em" }}>

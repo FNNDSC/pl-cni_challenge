@@ -1,5 +1,5 @@
 import React from "react";
-import Connectivity from "../../assets/Connectivity.jpg";
+import Connectivity from "../../assets/FNNDSC_logo.png";
 
 const Main: React.FC = () => {
   return (
@@ -33,8 +33,9 @@ const Main: React.FC = () => {
         </ul>
         eg. <br />
         <pre>
-          sub-066,1,0.7269782399142388 sub-090,0,0.8111361229380137 . . .
-          sub-111,0,0.60761617828937793 sub-115,1,0.836589863164504
+          <span> sub-090,0,0.8111361229380137...</span>
+          <span>sub-111,0,0.60761617828937793....</span>
+          <span>sub-115,1,0.836589863164504...</span>
         </pre>
         <h2 className="section-title">
           Installation Requirements and Quick Setup
