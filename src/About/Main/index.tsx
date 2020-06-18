@@ -21,7 +21,7 @@ const Main: React.FC = () => {
           </a>{" "}
           was held at the Medical Image Computation and Computer Assisted
           Intervention (MICCAI) Conference in 2019. Full details of this
-          Challenge can be found at in the corresponding publication <b>here</b>
+          Challenge can be found at in the corresponding publication <a href="https://arxiv.org/abs/2006.03611"><b>here</b></a>
         </p>
         <p>
           With our free to download training data and the use of our Docker
