@@ -38,7 +38,9 @@ const Main: React.FC<RouteComponentProps> = (props) => {
           <input className="lname-input" id="lname" type="text" />
 
           <label className="message-label">Docker Image</label>
-          <textarea className="message-textarea" id="message"></textarea>
+          <textarea className="message-textarea" id="message">
+	  your_Docker_account name/cnichallenge_DockerRepo
+	  </textarea>
 
           <button className="btn btn-primary btn-form">Send</button>
         </form>

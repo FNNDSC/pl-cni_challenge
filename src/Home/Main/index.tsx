@@ -41,13 +41,12 @@ const Main: React.FC<RouteComponentProps> = (props) => {
           <h2 className="section-title section-title-center">Get in touch</h2>
           <p>Any questions? Email us:</p>
           <p>
-            Markus D. Schirmer:
-            <br /> mschirmer1 |at| mgh.harvard.edu
-          </p>
-
-          <p>
             Ai Wern Chung:
             <br /> aiwern.chung |at| childrens.harvard.edu
+          </p>
+          <p>
+            Markus D. Schirmer:
+            <br /> mschirmer1 |at| mgh.harvard.edu
           </p>
         </div>
       </section>
