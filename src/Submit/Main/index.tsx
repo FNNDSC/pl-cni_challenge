@@ -1,8 +1,8 @@
 import React from "react";
 import Evaluate from "../../assets/evaluate.png";
-import { withRouter } from "react-router-dom";
+import { withRouter, RouteComponentProps } from "react-router-dom";
 
-const Main: React.FC = (props) => {
+const Main: React.FC<RouteComponentProps> = (props) => {
   return (
     <main className="main-template main-grid">
       <h1 className="page-title">Evaluate your Model</h1>
