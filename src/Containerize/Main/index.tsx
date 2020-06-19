@@ -32,11 +32,13 @@ const Main: React.FC = () => {
           </li>
         </ul>
         eg. <br />
-        <pre>
-          <span> sub-090,0,0.8111361229380137...</span>
-          <span>sub-111,0,0.60761617828937793....</span>
-          <span>sub-115,1,0.836589863164504...</span>
-        </pre>
+        <p><pre>
+          sub-066,1,0.7269782<br />
+	  sub-090,0,0.8111361<br />
+	  . . .<br />
+          sub-111,0,0.6076161<br /> 
+	  sub-115,1,0.8365898<br />
+        </pre></p>
         <h2 className="section-title">
           Installation Requirements and Quick Setup
         </h2>
@@ -147,13 +149,14 @@ const Main: React.FC = () => {
           <a href="https://github.com/aichung/pl-cnichallenge_stub">
             pl-cnichallenge_stub
           </a>
-          ,that containerizes your trained model. pl-cnichallenge_stub is an app
+          , that containerizes your trained model. pl-cnichallenge_stub is an app
           containing a bare bones example which you can edit to include your
           code/package. Although the wrapper is coded in Python, programs in
           other languages can be included.
           <br />
           <br />
-          See the pl-cnichallenge_stub README for details on how to execute and
+          See the pl-cnichallenge_stub <a href="https://github.com/aichung/pl-cnichallenge_stub/blob/master/README.rst">
+	  README</a> for details on how to execute and
           populate the bare bones example to containerize your model that is
           compatible for use on our evaluation portal.
         </p>

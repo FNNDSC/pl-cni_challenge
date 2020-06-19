@@ -21,7 +21,7 @@ const Main: React.FC = () => {
           </a>{" "}
           was held at the Medical Image Computation and Computer Assisted
           Intervention (MICCAI) Conference in 2019. Full details of this
-          Challenge can be found at in the corresponding publication <b>here</b>
+          Challenge can be found at in the corresponding publication <a href="https://arxiv.org/abs/2006.03611"><b>here</b></a>
         </p>
         <p>
           With our free to download training data and the use of our Docker
@@ -117,7 +117,7 @@ const Main: React.FC = () => {
           <li>
             {" "}
             Enable your classification model to output its decisions in a .csv
-            file as per our requirements
+            file as per our <a href="Containerize/Main/index.tsx">requirements</a>;
           </li>
           <li>
             {" "}
@@ -143,7 +143,7 @@ const Main: React.FC = () => {
           </li>
           <li>
             {" "}
-            Populate our wrapper code with your trained model to convert it into
+            Populate our <a href="https://github.com/aichung/pl-cnichallenge_stub">wrapper code</a> with your trained model to convert it into
             a containerized plugin that is ChRIS compatible;
           </li>
           <li>
@@ -154,7 +154,7 @@ const Main: React.FC = () => {
           <li>
             {" "}
             Immedietely evaluate your model on hidden test data by entering the
-            Docker image link <a href="submit.html">here</a>.
+            Docker image link <a href="Submit/Main/index.tsx">here</a>.
           </li>
         </ol>
       </div>
