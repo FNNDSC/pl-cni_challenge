@@ -9,7 +9,7 @@ const Main: React.FC = () => {
       <img className="main-image" src={Connectivity} alt="brain connectivity" />
 
       <div className="main-text">
-        <h2 className="section-title">Classification Output Requirements</h2>
+        <h2 className="section-title"><a href="#requirements">Classification Output Requirements</a></h2>
         <span>
           The results from your model should be output into a text file in the
           following format:{" "}

@@ -54,9 +54,9 @@ const Main: React.FC = () => {
           <a href="http://www.kennedykrieger.org/kirby-research-center">
             Kennedy Krieger Institute
           </a>
-          , 120 examples of each class are available for
-          <a href="https://github.com/mdschirmer/2019_CNI_TrainingRelease">
-            training
+          , 120 examples of each class are available for{" "}
+	  <a href="https://github.com/mdschirmer/2019_CNI_TrainingRelease">
+	    training
           </a>{" "}
           (n=100/100) and{" "}
           <a href="https://github.com/mdschirmer/2019_CNI_ValidationRelease">
@@ -111,13 +111,13 @@ const Main: React.FC = () => {
           <br />
           <br />
           To evaluate your model on hidden test data, the following steps are
-          required (full details <a href="howto.html">here</a>):
+          required (full details <a href="/Containerize">here</a>):
         </p>
         <ol>
           <li>
             {" "}
             Enable your classification model to output its decisions in a .csv
-            file as per our <a href="Containerize/Main/index.tsx">requirements</a>;
+            file as per our <a href="/Containerize/#requirements">requirements</a>;
           </li>
           <li>
             {" "}
@@ -154,7 +154,7 @@ const Main: React.FC = () => {
           <li>
             {" "}
             Immedietely evaluate your model on hidden test data by entering the
-            Docker image link <a href="Submit/Main/index.tsx">here</a>.
+            Docker image link <a href="/Submit">here</a>.
           </li>
         </ol>
       </div>
