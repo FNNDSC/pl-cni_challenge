@@ -453,6 +453,14 @@ textarea {
     grid-column-gap: 1em;
   }
 
+  input {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    font-family: inherit;
+  }
+
   .fname-label,
   .fname-input {
     grid-column: 1;
@@ -467,7 +475,13 @@ textarea {
   .message-textarea {
     grid-column: span 2;
   }
-
+  .message-textarea::placeholder {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    font-family: inherit;
+  }
   .btn-form {
     grid-column: 2;
   }
