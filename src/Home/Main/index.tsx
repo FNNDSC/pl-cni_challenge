@@ -23,7 +23,7 @@ const Main: React.FC<RouteComponentProps> = (props) => {
             Are we capturing biologically relevant and generalizable information
             about the brain using functional connectomics, or are we simply
             overfitting to the data? Leverage a unique resting-state fMRI
-            dataset to design a<strong>classification framework</strong> to
+            dataset to design a<strong> classification framework</strong> to
             predict patients ADHD diagnosis.
           </p>
         </div>

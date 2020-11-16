@@ -1,5 +1,6 @@
 import React from "react";
 import challenge_logo from "../../assets/challenge_logo.png";
+import { Link } from "react-router-dom";
 
 const Main: React.FC = () => {
   return (
@@ -21,12 +22,15 @@ const Main: React.FC = () => {
           </a>{" "}
           was held at the Medical Image Computation and Computer Assisted
           Intervention (MICCAI) Conference in 2019. Full details of this
-          Challenge can be found at in the corresponding publication <a href="https://arxiv.org/abs/2006.03611"><b>here</b></a>
+          Challenge can be found at in the corresponding publication{" "}
+          <a href="https://arxiv.org/abs/2006.03611">
+            <b>here</b>
+          </a>
         </p>
         <p>
           With our free to download training data and the use of our Docker
-          framework, you will be able to assess your classNameification model on
-          our hidden test dataset.
+          framework, you will be able to assess your classification model on our
+          hidden test dataset.
         </p>
         <h2 className="section-title">Problem Statement</h2>
         <p style={{ margin: "1.5em" }}>
@@ -111,13 +115,13 @@ const Main: React.FC = () => {
           <br />
           <br />
           To evaluate your model on hidden test data, the following steps are
-          required (full details <a href="howto.html">here</a>):
+          required (full details <Link to="/containerize">here</Link>):
         </p>
         <ol>
           <li>
             {" "}
             Enable your classification model to output its decisions in a .csv
-            file as per our <a href="Containerize/Main/index.tsx">requirements</a>;
+            file as per our <Link to="/containerize">requirements</Link>;
           </li>
           <li>
             {" "}
@@ -143,8 +147,12 @@ const Main: React.FC = () => {
           </li>
           <li>
             {" "}
-            Populate our <a href="https://github.com/aichung/pl-cnichallenge_stub">wrapper code</a> with your trained model to convert it into
-            a containerized plugin that is ChRIS compatible;
+            Populate our{" "}
+            <a href="https://github.com/aichung/pl-cnichallenge_stub">
+              wrapper code
+            </a>{" "}
+            with your trained model to convert it into a containerized plugin
+            that is ChRIS compatible;
           </li>
           <li>
             {" "}
@@ -154,7 +162,7 @@ const Main: React.FC = () => {
           <li>
             {" "}
             Immedietely evaluate your model on hidden test data by entering the
-            Docker image link <a href="Submit/Main/index.tsx">here</a>.
+            Docker image link <Link to="/submit">here</Link>.
           </li>
         </ol>
       </div>

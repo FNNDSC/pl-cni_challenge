@@ -1,5 +1,5 @@
 import React from "react";
-import Connectivity from "../../assets/Connectivity.jpg";
+import Connectivity from "../../assets/FNNDSC_logo.png";
 
 const Main: React.FC = () => {
   return (
@@ -32,13 +32,19 @@ const Main: React.FC = () => {
           </li>
         </ul>
         eg. <br />
-        <p><pre>
-          sub-066,1,0.7269782<br />
-	  sub-090,0,0.8111361<br />
-	  . . .<br />
-          sub-111,0,0.6076161<br /> 
-	  sub-115,1,0.8365898<br />
-        </pre></p>
+        <p>
+          <pre>
+            sub-066,1,0.7269782
+            <br />
+            sub-090,0,0.8111361
+            <br />
+            . . .<br />
+            sub-111,0,0.6076161
+            <br />
+            sub-115,1,0.8365898
+            <br />
+          </pre>
+        </p>
         <h2 className="section-title">
           Installation Requirements and Quick Setup
         </h2>
@@ -109,7 +115,9 @@ const Main: React.FC = () => {
               you’d like to use for the automated build select the{" "}
               <b>pl-cni_challenge </b>
               repository that you just forked. Name the Docker repository{" "}
-              <i>{`$\{cnichallenge_DockerRepo}`} </i>
+              <b>
+                <i>{`$\{cnichallenge_DockerRepo}`} </i>
+              </b>
               and make it Public.
             </li>
 
@@ -122,8 +130,9 @@ const Main: React.FC = () => {
               <br />
               Create a new build rule by clicking the <b>BUILD RULES+</b>{" "}
               button. A good rule is **Source type:** "Tag", **Source:**
-              "/^[0-9.]+$/" and **Docker Tag:** "version-sourceref".
+              "/^[0-9.]+$/" and **Docker Tag:** "version-{`{sourceref}`}".
             </li>
+
             <li>
               {" "}
               Click <b>Create & Build</b> button to finish the setup and trigger
@@ -135,8 +144,8 @@ const Main: React.FC = () => {
             After this build has completed, the <b>cnichallenge_stub</b> bare
             bones example is now available as a Docker image to be pulled from
             your Docker Hub. The link to it will be
-            <i> your_Docker_account name/cnichallenge_DockerRepo</i>. Use this
-            to <a href="submit">evaluate </a>
+            <i> {`$\{your_Docker_account name/cnichallenge_DockerRepo}`}</i>.
+            Use this to <a href="submit">evaluate </a>
             your model on the test set.
           </li>
         </ol>
@@ -146,16 +155,19 @@ const Main: React.FC = () => {
           <a href="https://github.com/aichung/pl-cnichallenge_stub">
             pl-cnichallenge_stub
           </a>
-          , that containerizes your trained model. pl-cnichallenge_stub is an app
-          containing a bare bones example which you can edit to include your
+          , that containerizes your trained model. pl-cnichallenge_stub is an
+          app containing a bare bones example which you can edit to include your
           code/package. Although the wrapper is coded in Python, programs in
           other languages can be included.
           <br />
           <br />
-          See the pl-cnichallenge_stub <a href="https://github.com/aichung/pl-cnichallenge_stub/blob/master/README.rst">
-	  README</a> for details on how to execute and
-          populate the bare bones example to containerize your model that is
-          compatible for use on our evaluation portal.
+          See the pl-cnichallenge_stub{" "}
+          <a href="https://github.com/aichung/pl-cnichallenge_stub/blob/master/README.rst">
+            README
+          </a>{" "}
+          for details on how to execute and populate the bare bones example to
+          containerize your model that is compatible for use on our evaluation
+          portal.
         </p>
       </div>
     </main>
