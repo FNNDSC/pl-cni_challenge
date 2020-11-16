@@ -105,7 +105,7 @@ const Main: React.FC = () => {
           </li>
           <ol>
             <li>
-              In 'Account Settings' -> 'Linked Accounts', connect your GitHub
+              In 'Account Settings' &gt 'Linked Accounts', connect your GitHub
               account to your DockerHub account.
             </li>
             <li>
